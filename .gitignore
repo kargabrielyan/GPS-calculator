@@ -1,0 +1,114 @@
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/upgrade/
+wp-content/debug.log
+
+# Plugin specific
+*.log
+*.tmp
+debug-*.php
+test-*.php
+test-*.html
+*-backup.*
+temp/
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dependencies
+node_modules/
+vendor/
+composer.lock
+
+# Build files
+*.zip
+*.tar.gz
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Database
+*.sql
+*.sqlite
+
+# Cache
+cache/
+tmp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Logs
+error_log
+access_log
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# WordPress specific
+wp-config-local.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/debug.log
+
+# Plugin development
+*.pot
+*.po
+*.mo
+languages/
+
+# Testing
+phpunit.xml
+tests/
+test-results/
+
+# Documentation build
+docs/_build/
+site/
+
+# Coverage reports
+coverage/
+*.coverage

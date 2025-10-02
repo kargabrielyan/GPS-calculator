@@ -1,0 +1,204 @@
+{
+  "vehicle_types": {
+    "mardatar": "Մարդատար ավտոմեքենաներ",
+    "bernatar": "Բեռնատար ավտոմեքենաներ"
+  },
+  "makes": {
+    "mardatar": [
+      {"id": "Toyota", "name": "Toyota"},
+      {"id": "Mercedes", "name": "Mercedes"},
+      {"id": "BMW", "name": "BMW"},
+      {"id": "Audi", "name": "Audi"},
+      {"id": "Volkswagen", "name": "Volkswagen"},
+      {"id": "Hyundai", "name": "Hyundai"},
+      {"id": "Kia", "name": "Kia"},
+      {"id": "Nissan", "name": "Nissan"},
+      {"id": "Ford", "name": "Ford"},
+      {"id": "Lexus", "name": "Lexus"},
+      {"id": "Honda", "name": "Honda"},
+      {"id": "Mazda", "name": "Mazda"},
+      {"id": "Subaru", "name": "Subaru"},
+      {"id": "Mitsubishi", "name": "Mitsubishi"},
+      {"id": "Jeep", "name": "Jeep"}
+    ],
+    "bernatar": [
+      {"id": "Volvo", "name": "Volvo"},
+      {"id": "Scania", "name": "Scania"},
+      {"id": "MAN", "name": "MAN"},
+      {"id": "Iveco", "name": "Iveco"},
+      {"id": "DAF", "name": "DAF"}
+    ]
+  },
+  "models": {
+    "Toyota": [
+      {"id": "Corolla", "name": "Corolla"},
+      {"id": "Camry", "name": "Camry"},
+      {"id": "RAV4", "name": "RAV4"},
+      {"id": "Prius", "name": "Prius"},
+      {"id": "Highlander", "name": "Highlander"},
+      {"id": "Sienna", "name": "Sienna"},
+      {"id": "Avalon", "name": "Avalon"},
+      {"id": "4Runner", "name": "4Runner"},
+      {"id": "Tacoma", "name": "Tacoma"},
+      {"id": "Tundra", "name": "Tundra"},
+      {"id": "Sequoia", "name": "Sequoia"},
+      {"id": "Land Cruiser", "name": "Land Cruiser"},
+      {"id": "Yaris", "name": "Yaris"},
+      {"id": "C-HR", "name": "C-HR"},
+      {"id": "Venza", "name": "Venza"},
+      {"id": "Mirai", "name": "Mirai"},
+      {"id": "GR Supra", "name": "GR Supra"},
+      {"id": "GR86", "name": "GR86"}
+    ],
+    "Mercedes": [
+      {"id": "C-Class", "name": "C-Class"},
+      {"id": "E-Class", "name": "E-Class"},
+      {"id": "GLC", "name": "GLC"},
+      {"id": "GLE", "name": "GLE"},
+      {"id": "A-Class", "name": "A-Class"},
+      {"id": "S-Class", "name": "S-Class"}
+    ],
+    "BMW": [
+      {"id": "3 Series", "name": "3 Series"},
+      {"id": "5 Series", "name": "5 Series"},
+      {"id": "X5", "name": "X5"},
+      {"id": "X3", "name": "X3"},
+      {"id": "7 Series", "name": "7 Series"},
+      {"id": "X1", "name": "X1"}
+    ],
+    "Audi": [
+      {"id": "A4", "name": "A4"},
+      {"id": "Q5", "name": "Q5"},
+      {"id": "A6", "name": "A6"},
+      {"id": "Q7", "name": "Q7"},
+      {"id": "A3", "name": "A3"},
+      {"id": "Q3", "name": "Q3"}
+    ],
+    "Volkswagen": [
+      {"id": "Golf", "name": "Golf"},
+      {"id": "Passat", "name": "Passat"},
+      {"id": "Tiguan", "name": "Tiguan"},
+      {"id": "Jetta", "name": "Jetta"},
+      {"id": "Atlas", "name": "Atlas"},
+      {"id": "Touareg", "name": "Touareg"}
+    ],
+    "Hyundai": [
+      {"id": "Elantra", "name": "Elantra"},
+      {"id": "Tucson", "name": "Tucson"},
+      {"id": "Santa Fe", "name": "Santa Fe"},
+      {"id": "Sonata", "name": "Sonata"},
+      {"id": "Kona", "name": "Kona"},
+      {"id": "Palisade", "name": "Palisade"}
+    ],
+    "Kia": [
+      {"id": "Sportage", "name": "Sportage"},
+      {"id": "Rio", "name": "Rio"},
+      {"id": "Sorento", "name": "Sorento"},
+      {"id": "Optima", "name": "Optima"},
+      {"id": "Soul", "name": "Soul"},
+      {"id": "Telluride", "name": "Telluride"}
+    ],
+    "Nissan": [
+      {"id": "Qashqai", "name": "Qashqai"},
+      {"id": "X-Trail", "name": "X-Trail"},
+      {"id": "Altima", "name": "Altima"},
+      {"id": "Sentra", "name": "Sentra"},
+      {"id": "Murano", "name": "Murano"},
+      {"id": "Pathfinder", "name": "Pathfinder"}
+    ],
+    "Ford": [
+      {"id": "Focus", "name": "Focus"},
+      {"id": "Mondeo", "name": "Mondeo"},
+      {"id": "Explorer", "name": "Explorer"},
+      {"id": "Mustang", "name": "Mustang"},
+      {"id": "F-150", "name": "F-150"},
+      {"id": "Escape", "name": "Escape"}
+    ],
+    "Lexus": [
+      {"id": "RX", "name": "RX"},
+      {"id": "NX", "name": "NX"},
+      {"id": "ES", "name": "ES"},
+      {"id": "GX", "name": "GX"},
+      {"id": "LS", "name": "LS"},
+      {"id": "UX", "name": "UX"}
+    ],
+    "Honda": [
+      {"id": "Civic", "name": "Civic"},
+      {"id": "Accord", "name": "Accord"},
+      {"id": "CR-V", "name": "CR-V"},
+      {"id": "Pilot", "name": "Pilot"},
+      {"id": "Fit", "name": "Fit"},
+      {"id": "HR-V", "name": "HR-V"}
+    ],
+    "Mazda": [
+      {"id": "Mazda3", "name": "Mazda3"},
+      {"id": "Mazda6", "name": "Mazda6"},
+      {"id": "CX-5", "name": "CX-5"},
+      {"id": "CX-9", "name": "CX-9"},
+      {"id": "MX-5", "name": "MX-5"},
+      {"id": "CX-3", "name": "CX-3"}
+    ],
+    "Subaru": [
+      {"id": "Outback", "name": "Outback"},
+      {"id": "Forester", "name": "Forester"},
+      {"id": "Impreza", "name": "Impreza"},
+      {"id": "Legacy", "name": "Legacy"},
+      {"id": "Crosstrek", "name": "Crosstrek"},
+      {"id": "Ascent", "name": "Ascent"}
+    ],
+    "Mitsubishi": [
+      {"id": "Outlander", "name": "Outlander"},
+      {"id": "Eclipse Cross", "name": "Eclipse Cross"},
+      {"id": "Mirage", "name": "Mirage"},
+      {"id": "Pajero", "name": "Pajero"},
+      {"id": "Lancer", "name": "Lancer"},
+      {"id": "ASX", "name": "ASX"}
+    ],
+    "Jeep": [
+      {"id": "Grand Cherokee", "name": "Grand Cherokee"},
+      {"id": "Wrangler", "name": "Wrangler"},
+      {"id": "Cherokee", "name": "Cherokee"},
+      {"id": "Compass", "name": "Compass"},
+      {"id": "Renegade", "name": "Renegade"},
+      {"id": "Gladiator", "name": "Gladiator"}
+    ]
+  },
+  "years": {
+    "Toyota": {
+      "Corolla": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Camry": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "RAV4": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Prius": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Highlander": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Sienna": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Avalon": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "4Runner": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Tacoma": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Tundra": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Sequoia": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Land Cruiser": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Yaris": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "C-HR": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Venza": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "Mirai": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "GR Supra": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "GR86": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010]
+    },
+    "Mercedes": {
+      "C-Class": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "E-Class": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "GLC": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "GLE": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "A-Class": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "S-Class": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010]
+    },
+    "BMW": {
+      "3 Series": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "5 Series": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "X5": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "X3": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "7 Series": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010],
+      "X1": [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010]
+    }
+  }
+}

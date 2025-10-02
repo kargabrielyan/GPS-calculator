@@ -1,0 +1,113 @@
+/* Machine Calculator Notice Admin Styles */
+
+.mc-notice-preview {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+#mc-notice-preview-container {
+    min-height: 80px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px dashed #ccc;
+}
+
+#mc-notice-preview-container:empty::after {
+    content: "Включите комментарии и заполните текст для предварительного просмотра";
+    color: #666;
+    font-style: italic;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-table th {
+    width: 200px;
+}
+
+.wp-editor-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Live preview styles */
+.mc-notice-admin-preview {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px dashed #007cba;
+    border-radius: 4px;
+    background: #f7fcfe;
+}
+
+.mc-notice-admin-preview .mc-notice {
+    margin: 0;
+}
+
+/* Notice about overrides */
+.mc-override-explanation {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 10px 0;
+    color: #856404;
+}
+
+.mc-override-explanation strong {
+    color: #533f03;
+}
+
+/* Settings form improvements */
+.form-table input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.form-table select {
+    min-width: 200px;
+}
+
+/* Admin page header */
+.mc-admin-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.mc-admin-header h1 {
+    margin: 0;
+}
+
+.mc-admin-icon {
+    width: 32px;
+    height: 32px;
+    background: #007cba;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Success/Error messages */
+.mc-admin-message {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border-left: 4px solid;
+}
+
+.mc-admin-message--success {
+    background: #d1fae5;
+    border-left-color: #10b981;
+    color: #065f46;
+}
+
+.mc-admin-message--error {
+    background: #fee2e2;
+    border-left-color: #ef4444;
+    color: #991b1b;
+}
