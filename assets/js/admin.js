@@ -327,12 +327,19 @@ jQuery(document).ready(function($) {
         const makeId = link.data('make-id');
         const makeName = link.data('make-name');
         
+        console.log('Make clicked:', { makeId: makeId, makeName: makeName });
+        
         // Update active make
         $('.sgc-make-link').removeClass('active');
         link.addClass('active');
         
+        // Update make_id in forms
+        $('input[name="make_id"]').val(makeId);
+        
         // Load models for this make
-        loadModelsList(makeId, makeName);
+        if (makeId && makeName) {
+            loadModelsList(makeId, makeName);
+        }
     });
     
     // Search buttons
@@ -435,20 +442,29 @@ jQuery(document).ready(function($) {
             search: search
         };
         
+        console.log('Loading makes data via AJAX:', formData);
+        
         $.ajax({
             url: machineCalculatorAdmin.ajax_url,
             type: 'POST',
             data: formData,
             success: function(response) {
+                console.log('Makes data response:', response);
                 if (response.success) {
                     updateMakesList(response.data.makes);
                     updateTypeInForms(type);
+                    // Clear models list when switching types
+                    $('.sgc-models-column .sgc-list').empty();
+                    $('.sgc-models-column .sgc-list').append('<p class="sgc-empty">Выберите марку для просмотра моделей</p>');
+                    $('.sgc-models-column .sgc-column-header h2').text('Մոդել');
                 } else {
                     console.error('Error loading makes:', response.data.message);
+                    showNotice('Ошибка загрузки марок: ' + response.data.message, 'error');
                 }
             },
             error: function(xhr, status, error) {
                 console.error('AJAX error loading makes:', error);
+                showNotice('Ошибка загрузки марок: ' + error, 'error');
             }
         });
     }
@@ -462,25 +478,31 @@ jQuery(document).ready(function($) {
             search: search
         };
         
+        console.log('Loading models data via AJAX:', formData);
+        
         $.ajax({
             url: machineCalculatorAdmin.ajax_url,
             type: 'POST',
             data: formData,
             success: function(response) {
+                console.log('Models data response:', response);
                 if (response.success) {
                     updateModelsList(response.data.models, makeName);
                 } else {
                     console.error('Error loading models:', response.data.message);
+                    showNotice('Ошибка загрузки моделей: ' + response.data.message, 'error');
                 }
             },
             error: function(xhr, status, error) {
                 console.error('AJAX error loading models:', error);
+                showNotice('Ошибка загрузки моделей: ' + error, 'error');
             }
         });
     }
     
     // Function to update makes list in DOM
     function updateMakesList(makes) {
+        console.log('Updating makes list with:', makes);
         const makesList = $('.sgc-makes-column .sgc-list');
         makesList.empty();
         
@@ -488,11 +510,8 @@ jQuery(document).ready(function($) {
             makesList.append('<p class="sgc-empty">Марок пока нет</p>');
         } else {
             makes.forEach(function(make) {
-                const isActive = $('.sgc-make-link[data-make-id="' + make.id + '"]').hasClass('active');
-                const activeClass = isActive ? 'active' : '';
-                
                 const makeItem = $('<li class="sgc-list-item">' +
-                    '<a href="#" class="sgc-item-link sgc-make-link ' + activeClass + '" ' +
+                    '<a href="#" class="sgc-item-link sgc-make-link" ' +
                     'data-make-id="' + make.id + '" data-make-name="' + make.name + '">' +
                     make.name + '</a>' +
                     '<div class="sgc-item-actions">' +
@@ -504,10 +523,13 @@ jQuery(document).ready(function($) {
                 makesList.append(makeItem);
             });
         }
+        
+        console.log('Makes list updated, found items:', makesList.find('.sgc-list-item').length);
     }
     
     // Function to update models list in DOM
     function updateModelsList(models, makeName) {
+        console.log('Updating models list with:', models, 'for make:', makeName);
         const modelsList = $('.sgc-models-column .sgc-list');
         modelsList.empty();
         
@@ -529,11 +551,41 @@ jQuery(document).ready(function($) {
         
         // Update models header
         $('.sgc-models-column .sgc-column-header h2').text('Модели марки: ' + makeName);
+        console.log('Models list updated, found items:', modelsList.find('.sgc-list-item').length);
     }
     
     // Function to update type in forms
     function updateTypeInForms(type) {
         $('input[name="type"]').val(type);
     }
+    
+    // Initialize catalog on page load
+    function initializeCatalog() {
+        console.log('Initializing catalog...');
+        
+        // Check if we're on the catalog tab
+        if ($('.sgc-type-tab').length > 0) {
+            console.log('Catalog elements found, initializing...');
+            
+            // Get current type from URL or default to mardatar
+            const urlParams = new URLSearchParams(window.location.search);
+            const currentType = urlParams.get('type') || 'mardatar';
+            
+            console.log('Current type from URL:', currentType);
+            
+            // Set active tab
+            $('.sgc-type-tab').removeClass('active');
+            $('.sgc-type-tab[data-type="' + currentType + '"]').addClass('active');
+            
+            // Update type in forms
+            updateTypeInForms(currentType);
+            
+            // Load makes for current type
+            loadMakesData(currentType);
+        }
+    }
+    
+    // Initialize catalog on page load
+    initializeCatalog();
     
 });
