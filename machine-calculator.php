@@ -330,22 +330,24 @@ class MachineCalculator {
                                 </label>
                             </div>
                         </label>
-                        <label>
-                            <span>Մեքենայի տիպը</span>
-                            <select id="mc1-vehicle-type" required>
-                                <option value="">Ընտրել տիպը</option>
-                                <option value="mardatar">Մարդատար</option>
-                                <option value="bernatar">Բեռնատար</option>
-                            </select>
-                        </label>
-                        <label>
-                            <span>Մեքենայի մակնիշը</span>
-                            <select id="mc1-make" disabled required></select>
-                        </label>
-                        <label>
-                            <span>Մեքենայի մոդելը</span>
-                            <select id="mc1-model" disabled required></select>
-                        </label>
+                        <div class="mc-vehicle-row">
+                            <label>
+                                <span>Մեքենայի տիպը</span>
+                                <select id="mc1-vehicle-type" required>
+                                    <option value="">Ընտրել տիպը</option>
+                                    <option value="mardatar">Մարդատար</option>
+                                    <option value="bernatar">Բեռնատար</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>Մեքենայի մակնիշը</span>
+                                <select id="mc1-make" disabled required></select>
+                            </label>
+                            <label>
+                                <span>Մեքենայի մոդելը</span>
+                                <select id="mc1-model" disabled required></select>
+                            </label>
+                        </div>
                         <label>
                             <span>Արտադր տարում</span>
                             <input type="number" id="mc1-year" min="1900" max="2027" placeholder="2020" required />
@@ -362,22 +364,24 @@ class MachineCalculator {
                 <div id="mc-tab-2" class="mc-panel">
                     <?php do_action('machine_calculator/notice/top', 'type2'); ?>
                     <div class="mc-grid">
-                        <label>
-                            <span>Մեքենայի տիպը</span>
-                            <select id="mc2-vehicle-type" required>
-                                <option value="">Ընտրել տիպը</option>
-                                <option value="mardatar">Մարդատար</option>
-                                <option value="bernatar">Բեռնատար</option>
-                            </select>
-                        </label>
-                        <label>
-                            <span>Մեքենայի մակնիշը</span>
-                            <select id="mc2-make" disabled required></select>
-                        </label>
-                        <label>
-                            <span>Մեքենայի մոդելը</span>
-                            <select id="mc2-model" disabled required></select>
-                        </label>
+                        <div class="mc-vehicle-row">
+                            <label>
+                                <span>Մեքենայի տիպը</span>
+                                <select id="mc2-vehicle-type" required>
+                                    <option value="">Ընտրել տիպը</option>
+                                    <option value="mardatar">Մարդատար</option>
+                                    <option value="bernatar">Բեռնատար</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>Մեքենայի մակնիշը</span>
+                                <select id="mc2-make" disabled required></select>
+                            </label>
+                            <label>
+                                <span>Մեքենայի մոդելը</span>
+                                <select id="mc2-model" disabled required></select>
+                            </label>
+                        </div>
                         <label>
                             <span>Արտադր տարում</span>
                             <input type="number" id="mc2-year" min="1900" max="2027" placeholder="2020" required />
